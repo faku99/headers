@@ -5,6 +5,8 @@
 
 @interface BBServer : NSObject
 
++ (NSDictionary *)savedSectionInfo;
+
 - (void)_addDataProvider:(id<BBDataProvider>)dataProvider sortSectionsNow:(BOOL)sortSections;
 
 @end

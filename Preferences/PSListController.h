@@ -96,6 +96,8 @@
 - (void)updateSpecifiers:(NSArray *)specifiers withSpecifiers:(NSArray *)newSpecifiers;
 - (void)updateSpecifiersInRange:(NSRange)range withSpecifiers:(NSArray *)newSpecifiers;
 
+- (void)_returnKeyPressed:(id)arg1;
+
 - (NSRange)rangeOfSpecifiersInGroupID:(NSString *)groupID;
 
 - (PSTableCell *)cachedCellForSpecifier:(PSSpecifier *)specifier;
