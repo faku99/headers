@@ -1,8 +1,9 @@
 #import <MobileIcons/MobileIcons.h>
+#import <SpringBoard/SBLeafIcon.h>
 
 @class SBApplication;
 
-@interface SBApplicationIcon : NSObject
+@interface SBApplicationIcon : SBLeafIcon
 
 - (instancetype)initWithApplication:(SBApplication *)application;
 

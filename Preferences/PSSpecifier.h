@@ -141,6 +141,8 @@ __END_DECLS
 - (void)setProperty:(id)property forKey:(NSString *)key;
 - (void)removePropertyForKey:(NSString *)key;
 
+- (void)setButtonAction:(SEL)buttonAction;
+
 @property (nonatomic, retain) NSDictionary *shortTitleDictionary;
 @property (nonatomic, retain) NSDictionary *titleDictionary;
 
