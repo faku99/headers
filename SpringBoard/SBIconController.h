@@ -1,4 +1,4 @@
-@class SBDockIconListView, SBIcon, SBIconModel, SBRootIconListView, SBRootFolderController;
+@class SBDockIconListView, SBIcon, SBIconModel, SBIconViewMap, SBRootIconListView, SBRootFolderController;
 
 @interface SBIconController : NSObject
 
@@ -12,5 +12,7 @@
 @property (nonatomic, retain, readonly) SBRootFolderController *_rootFolderController;
 
 - (BOOL)iconAllowsBadging:(SBIcon *)icon;
+
+- (SBIconViewMap *)viewMap;
 
 @end
