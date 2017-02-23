@@ -1,6 +1,6 @@
 #import "PSViewController.h"
 
-@class PSRootController, PSSpecifier, PSTableCell;
+@class PSRootController, PSSpecifier, PSTableCell, UIKeyboard;
 
 @interface PSListController : PSViewController <UITableViewDelegate, UITableViewDataSource, UIAppearance> {
 	NSArray *_specifiers;
@@ -96,7 +96,7 @@
 - (void)updateSpecifiers:(NSArray *)specifiers withSpecifiers:(NSArray *)newSpecifiers;
 - (void)updateSpecifiersInRange:(NSRange)range withSpecifiers:(NSArray *)newSpecifiers;
 
-- (void)_returnKeyPressed:(id)arg1;
+- (void)_returnKeyPressed:(UIKeyboard *)keyboard;
 
 - (NSRange)rangeOfSpecifiersInGroupID:(NSString *)groupID;
 
